@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+    p{
+      font-weight: bold;
+      color: black;
+    }
+    #mySelector{
+    font-size: 25;
+    padding: 8px;
+    background-color: blanchedalmond;
+    color: seagreen;
+  }
+  #mySelector option{
+    font-size: 20px;
+    padding: 8px;
+  }
+    </style>
+  </head>
+  <body bgcolor=aliceblue>
+    <p>Please Enter Your Information Correctly</p>
+    <form onsubmit="PopUp(event)">
+      <label for="name">Name:</label><br>
+      <input type="text" name="name" required style="width: 400px; height: 60px; background-color: blanchedalmond"><br>
+      <label for="Address">Address:</label><br>
+      <input type="text" name="Address" required style="width: 400px; height: 60px; background-color: blanchedalmond"><br></label><br>
+  <label for="email">Email</label><br>
+  <input type="email" id="email" name="email" required style="width: 400px; height: 60px; background-color: blanchedalmond;"><br><br>
+      <label for="mySelector"><p>What Would You Order:</p></label><br>
+<select id="mySelector" required>
+   <option value="" disabled selected hidden>Select An Option</option>
+  <option value="Cake">Cake</option>
+  <option value="Cookie">Cookie</option>
+  <option value="Pie">Pie</option>
+  <option value="IceCream">IceCream</option>
+  <option value="Cupcake">Cupcake</option>
+  <option value="Donuts">Donuts</option>
+</select><br><br>
+      <input type="submit" style="width: 200px; height: 40px; background-color: blanchedalmond;">
+      </form>
+      <script>
+        function PopUp(event) {
+          alert("Thanks For Your Order!");
+          event.preventDefault();
+          window.location.href="Home.html";
+        }
+      </script>
+  </body
+  </html>
